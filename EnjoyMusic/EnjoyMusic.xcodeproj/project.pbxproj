@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5346F1881E096BCA00BD9ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5346F1871E096BCA00BD9ACD /* AppDelegate.swift */; };
+		5346F18A1E096BCA00BD9ACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5346F1891E096BCA00BD9ACD /* ViewController.swift */; };
+		5346F18D1E096BCA00BD9ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5346F18B1E096BCA00BD9ACD /* Main.storyboard */; };
+		5346F1901E096BCA00BD9ACD /* EnjoyMusic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5346F18E1E096BCA00BD9ACD /* EnjoyMusic.xcdatamodeld */; };
+		5346F1921E096BCA00BD9ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5346F1911E096BCA00BD9ACD /* Assets.xcassets */; };
+		5346F1951E096BCA00BD9ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5346F1931E096BCA00BD9ACD /* LaunchScreen.storyboard */; };
+		5346F1A11E096C4100BD9ACD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5346F19D1E096C4100BD9ACD /* AudioToolbox.framework */; };
+		5346F1A31E096C4100BD9ACD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5346F19F1E096C4100BD9ACD /* CoreAudio.framework */; };
+		5346F1A41E096C4100BD9ACD /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5346F1A01E096C4100BD9ACD /* CoreAudioKit.framework */; };
+		5346F1A61E0D2C5E00BD9ACD /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5346F1A51E0D2C5E00BD9ACD /* test.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5346F1841E096BCA00BD9ACD /* EnjoyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5346F1871E096BCA00BD9ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5346F1891E096BCA00BD9ACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5346F18C1E096BCA00BD9ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5346F18F1E096BCA00BD9ACD /* EnjoyMusic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EnjoyMusic.xcdatamodel; sourceTree = "<group>"; };
+		5346F1911E096BCA00BD9ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5346F1941E096BCA00BD9ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5346F1961E096BCA00BD9ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5346F19D1E096C4100BD9ACD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5346F19E1E096C4100BD9ACD /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		5346F19F1E096C4100BD9ACD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		5346F1A01E096C4100BD9ACD /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		5346F1A51E0D2C5E00BD9ACD /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5346F1811E096BCA00BD9ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5346F1A11E096C4100BD9ACD /* AudioToolbox.framework in Frameworks */,
+				5346F1A31E096C4100BD9ACD /* CoreAudio.framework in Frameworks */,
+				5346F1A41E096C4100BD9ACD /* CoreAudioKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5346F17B1E096BCA00BD9ACD = {
+			isa = PBXGroup;
+			children = (
+				5346F1861E096BCA00BD9ACD /* EnjoyMusic */,
+				5346F1851E096BCA00BD9ACD /* Products */,
+				5346F19C1E096C4100BD9ACD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5346F1851E096BCA00BD9ACD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5346F1841E096BCA00BD9ACD /* EnjoyMusic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5346F1861E096BCA00BD9ACD /* EnjoyMusic */ = {
+			isa = PBXGroup;
+			children = (
+				5346F1871E096BCA00BD9ACD /* AppDelegate.swift */,
+				5346F1891E096BCA00BD9ACD /* ViewController.swift */,
+				5346F18B1E096BCA00BD9ACD /* Main.storyboard */,
+				5346F1911E096BCA00BD9ACD /* Assets.xcassets */,
+				5346F1931E096BCA00BD9ACD /* LaunchScreen.storyboard */,
+				5346F1961E096BCA00BD9ACD /* Info.plist */,
+				5346F18E1E096BCA00BD9ACD /* EnjoyMusic.xcdatamodeld */,
+				5346F1A51E0D2C5E00BD9ACD /* test.mp3 */,
+			);
+			path = EnjoyMusic;
+			sourceTree = "<group>";
+		};
+		5346F19C1E096C4100BD9ACD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5346F19D1E096C4100BD9ACD /* AudioToolbox.framework */,
+				5346F19E1E096C4100BD9ACD /* AudioUnit.framework */,
+				5346F19F1E096C4100BD9ACD /* CoreAudio.framework */,
+				5346F1A01E096C4100BD9ACD /* CoreAudioKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5346F1831E096BCA00BD9ACD /* EnjoyMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5346F1991E096BCA00BD9ACD /* Build configuration list for PBXNativeTarget "EnjoyMusic" */;
+			buildPhases = (
+				5346F1801E096BCA00BD9ACD /* Sources */,
+				5346F1811E096BCA00BD9ACD /* Frameworks */,
+				5346F1821E096BCA00BD9ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnjoyMusic;
+			productName = EnjoyMusic;
+			productReference = 5346F1841E096BCA00BD9ACD /* EnjoyMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5346F17C1E096BCA00BD9ACD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = musala;
+				TargetAttributes = {
+					5346F1831E096BCA00BD9ACD = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = QZ4CZSAVVU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5346F17F1E096BCA00BD9ACD /* Build configuration list for PBXProject "EnjoyMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5346F17B1E096BCA00BD9ACD;
+			productRefGroup = 5346F1851E096BCA00BD9ACD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5346F1831E096BCA00BD9ACD /* EnjoyMusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5346F1821E096BCA00BD9ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5346F1951E096BCA00BD9ACD /* LaunchScreen.storyboard in Resources */,
+				5346F1921E096BCA00BD9ACD /* Assets.xcassets in Resources */,
+				5346F1A61E0D2C5E00BD9ACD /* test.mp3 in Resources */,
+				5346F18D1E096BCA00BD9ACD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5346F1801E096BCA00BD9ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5346F1901E096BCA00BD9ACD /* EnjoyMusic.xcdatamodeld in Sources */,
+				5346F18A1E096BCA00BD9ACD /* ViewController.swift in Sources */,
+				5346F1881E096BCA00BD9ACD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5346F18B1E096BCA00BD9ACD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5346F18C1E096BCA00BD9ACD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5346F1931E096BCA00BD9ACD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5346F1941E096BCA00BD9ACD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5346F1971E096BCA00BD9ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5346F1981E096BCA00BD9ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5346F19A1E096BCA00BD9ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QZ4CZSAVVU;
+				INFOPLIST_FILE = EnjoyMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.musala.EnjoyMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5346F19B1E096BCA00BD9ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QZ4CZSAVVU;
+				INFOPLIST_FILE = EnjoyMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.musala.EnjoyMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5346F17F1E096BCA00BD9ACD /* Build configuration list for PBXProject "EnjoyMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5346F1971E096BCA00BD9ACD /* Debug */,
+				5346F1981E096BCA00BD9ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5346F1991E096BCA00BD9ACD /* Build configuration list for PBXNativeTarget "EnjoyMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5346F19A1E096BCA00BD9ACD /* Debug */,
+				5346F19B1E096BCA00BD9ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5346F18E1E096BCA00BD9ACD /* EnjoyMusic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5346F18F1E096BCA00BD9ACD /* EnjoyMusic.xcdatamodel */,
+			);
+			currentVersion = 5346F18F1E096BCA00BD9ACD /* EnjoyMusic.xcdatamodel */;
+			path = EnjoyMusic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5346F17C1E096BCA00BD9ACD /* Project object */;
+}

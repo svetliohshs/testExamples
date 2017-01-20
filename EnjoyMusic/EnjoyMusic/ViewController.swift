@@ -35,7 +35,7 @@ class ViewController: UIViewController,AVAudioRecorderDelegate {
         let format = input.inputFormat(forBus: 0)
         
         input.installTap(onBus: 0, bufferSize: 8192, format: format, block: {(buffer, time) in
-            print(buffer)
+            //print(buffer)
             //let data = Data(buffer:buffer)
             //self.buffers.append(buffer)
             
@@ -68,7 +68,7 @@ class ViewController: UIViewController,AVAudioRecorderDelegate {
     }
     
     func toPCMBuffer(data: NSData) -> AVAudioPCMBuffer {
-        let audioFormat = AVAudioFormat(commonFormat: AVAudioCommonFormat.pcmFormatFloat32, sampleRate: 8000, channels: 1, interleaved: false)  // given NSData audio format
+        let audioFormat = AVAudioFormat(commonFormat: AVAudioCommonFormat.pcmFormatFloat32, sampleRate: 8192, channels: 1, interleaved: false)  // given NSData audio format
         let PCMBuffer = AVAudioPCMBuffer(pcmFormat: audioFormat, frameCapacity: UInt32(data.length) / audioFormat.streamDescription.pointee.mBytesPerFrame)
         PCMBuffer.frameLength = PCMBuffer.frameCapacity
         let channels = UnsafeBufferPointer(start: PCMBuffer.floatChannelData, count: Int(PCMBuffer.format.channelCount))
@@ -84,10 +84,10 @@ class ViewController: UIViewController,AVAudioRecorderDelegate {
     func playBuffer(buffer:AVAudioPCMBuffer){
         
         i += 1
-        var request = URLRequest(url: URL(string: "http://169.254.80.186:3000/post?id=\(i)")!)
+        var request = URLRequest(url: URL(string: "http://169.254.91.237:3000/post")!)
         request.httpMethod = "POST"
-        let postString = i.description
-        request.httpBody = postString.data(using: .utf8)
+        request.setValue("application/json", forHTTPHeaderField:"Content-Type")
+        request.httpBody = try? JSONSerialization.data(withJSONObject: ["newbuffer":self.toNSData(PCMBuffer: buffer).base64EncodedString()], options: [])
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {                                                 // check for fundamental networking error
                 print("error=\(error)")

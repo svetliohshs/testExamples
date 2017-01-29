@@ -42,7 +42,7 @@ class ViewController: UIViewController,AVAudioRecorderDelegate {
             let data = self.toNSData(PCMBuffer: buffer)
             let buffer1 = self.toPCMBuffer(data: data)
            
-            self.playBuffer(buffer:buffer1)
+            self.playBuffer(buffer:buffer)
             if(self.buffers.count > 25){
                 input.removeTap(onBus: 0)
             }

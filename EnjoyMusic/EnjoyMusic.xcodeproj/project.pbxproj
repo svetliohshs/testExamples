@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02437A9357002B4EB4B33CFA /* Pods_EnjoyMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF16117E82247B060233D72 /* Pods_EnjoyMusic.framework */; };
 		5346F1881E096BCA00BD9ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5346F1871E096BCA00BD9ACD /* AppDelegate.swift */; };
 		5346F18A1E096BCA00BD9ACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5346F1891E096BCA00BD9ACD /* ViewController.swift */; };
 		5346F18D1E096BCA00BD9ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5346F18B1E096BCA00BD9ACD /* Main.storyboard */; };
@@ -33,6 +34,9 @@
 		5346F19F1E096C4100BD9ACD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		5346F1A01E096C4100BD9ACD /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		5346F1A51E0D2C5E00BD9ACD /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
+		BF47CBE82B88B7B5AFF11A15 /* Pods-EnjoyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyMusic/Pods-EnjoyMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		CDF16117E82247B060233D72 /* Pods_EnjoyMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnjoyMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1808D61177DE42574956447 /* Pods-EnjoyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnjoyMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnjoyMusic/Pods-EnjoyMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 				5346F1A11E096C4100BD9ACD /* AudioToolbox.framework in Frameworks */,
 				5346F1A31E096C4100BD9ACD /* CoreAudio.framework in Frameworks */,
 				5346F1A41E096C4100BD9ACD /* CoreAudioKit.framework in Frameworks */,
+				02437A9357002B4EB4B33CFA /* Pods_EnjoyMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +60,7 @@
 				5346F1861E096BCA00BD9ACD /* EnjoyMusic */,
 				5346F1851E096BCA00BD9ACD /* Products */,
 				5346F19C1E096C4100BD9ACD /* Frameworks */,
+				E1C77AE3679DDD1C7EB82105 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +94,18 @@
 				5346F19E1E096C4100BD9ACD /* AudioUnit.framework */,
 				5346F19F1E096C4100BD9ACD /* CoreAudio.framework */,
 				5346F1A01E096C4100BD9ACD /* CoreAudioKit.framework */,
+				CDF16117E82247B060233D72 /* Pods_EnjoyMusic.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1C77AE3679DDD1C7EB82105 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF47CBE82B88B7B5AFF11A15 /* Pods-EnjoyMusic.debug.xcconfig */,
+				D1808D61177DE42574956447 /* Pods-EnjoyMusic.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5346F1991E096BCA00BD9ACD /* Build configuration list for PBXNativeTarget "EnjoyMusic" */;
 			buildPhases = (
+				2B6BE863C3B8587780EC3AEF /* [CP] Check Pods Manifest.lock */,
 				5346F1801E096BCA00BD9ACD /* Sources */,
 				5346F1811E096BCA00BD9ACD /* Frameworks */,
 				5346F1821E096BCA00BD9ACD /* Resources */,
+				C07A9EDA72AA04E73935533D /* [CP] Embed Pods Frameworks */,
+				CBBEC87FA8F5EF91CA165989 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +179,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B6BE863C3B8587780EC3AEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C07A9EDA72AA04E73935533D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnjoyMusic/Pods-EnjoyMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBBEC87FA8F5EF91CA165989 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EnjoyMusic/Pods-EnjoyMusic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5346F1801E096BCA00BD9ACD /* Sources */ = {
@@ -287,6 +354,7 @@
 		};
 		5346F19A1E096BCA00BD9ACD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF47CBE82B88B7B5AFF11A15 /* Pods-EnjoyMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QZ4CZSAVVU;
@@ -300,6 +368,7 @@
 		};
 		5346F19B1E096BCA00BD9ACD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1808D61177DE42574956447 /* Pods-EnjoyMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QZ4CZSAVVU;

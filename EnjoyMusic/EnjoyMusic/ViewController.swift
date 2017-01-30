@@ -9,8 +9,9 @@
 import UIKit
 import AudioToolbox
 import AVFoundation
+import Starscream
 
-class ViewController: UIViewController,AVAudioRecorderDelegate {
+class ViewController: UIViewController,AVAudioRecorderDelegate,WebSocketDelegate {
 
     var audioFilePlayer: AVAudioPlayerNode = AVAudioPlayerNode()
     var player:AVAudioPlayer = AVAudioPlayer()
@@ -20,6 +21,8 @@ class ViewController: UIViewController,AVAudioRecorderDelegate {
     @IBOutlet weak var playButton: UIButton!
     var buffers:[AVAudioPCMBuffer] = []
     
+    var socket = WebSocket(url: URL(string: "ws://localhost:3000/")!)
+    
     
     var engine = AVAudioEngine()
     var engine1 = AVAudioEngine()
@@ -28,6 +31,10 @@ class ViewController: UIViewController,AVAudioRecorderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        socket.delegate = self
+        socket.connect()
         
         // Setup engine and node instances
         assert(engine.inputNode != nil)
@@ -57,6 +64,33 @@ class ViewController: UIViewController,AVAudioRecorderDelegate {
         }
         
 
+    }
+    
+    
+    deinit {
+        socket.disconnect(forceTimeout: 0)
+        socket.delegate = nil
+    }
+    
+    func sendMessage(_ message: String) {
+        socket.write(string: message)
+    }
+    
+    
+    public func websocketDidConnect(socket: Starscream.WebSocket) {
+        socket.write(string: "Hello")
+    }
+    
+    public func websocketDidDisconnect(socket: Starscream.WebSocket, error: NSError?) {
+        
+    }
+    
+    public func websocketDidReceiveMessage(socket: Starscream.WebSocket, text: String) {
+        
+    }
+    
+    public func websocketDidReceiveData(socket: Starscream.WebSocket, data: Data) {
+        
     }
     
     

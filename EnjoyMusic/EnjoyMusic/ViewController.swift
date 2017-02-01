@@ -133,9 +133,9 @@ class ViewController: UIViewController,AVAudioRecorderDelegate,WebSocketDelegate
                 print("response = \(response)")
             }
             
-            print(data)
+            //print(data)
             let responseString = String(data: data, encoding: .utf8)
-            print("responseString = \(responseString)")
+            //print("responseString = \(responseString)")
         }
         task.resume()
         
